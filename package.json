@@ -1,0 +1,8 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "root sample program",
+  "main": "index.js",
+  "author": "Rob Hilgefort <rjhilgefort@gmail.com>",
+  "license": "MIT"
+}
