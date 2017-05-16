@@ -1,5 +1,5 @@
 const t = require('tcomb');
-const { tcomb } = require('../test-fixtures');
+const { tcomb, types } = require('../test-fixtures');
 const fpThrow = require('./fp-throw');
 
 describe('fpThrow', () => {
@@ -25,9 +25,8 @@ describe('fpThrow', () => {
     const harness = (data) => {
       expect(() => fpThrow(data)).toThrow(tcomb.invalidValue);
     };
-
-    harness(2);
-    harness(true);
-    harness(['foo', 'bar']);
+    harness(types.number);
+    harness(types.boolean);
+    harness(types.array);
   });
 });

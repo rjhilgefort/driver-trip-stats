@@ -1,6 +1,6 @@
 const { __, curryN, head, prop, split } = require('ramda');
 const fs = require('mz/fs');
-const { pipeProgram, log } = require('../utils');
+const { pipeProgram } = require('../utils');
 const { Program } = require('../types');
 const ensureAbsolutePath = require('./ensure-absolute-path');
 

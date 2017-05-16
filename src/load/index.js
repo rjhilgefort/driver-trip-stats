@@ -1,6 +1,3 @@
-const load = (data) => {
-  console.log('load');
-  return data;
-};
+const load = data => data;
 
 module.exports = load;

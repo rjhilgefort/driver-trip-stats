@@ -18,11 +18,22 @@ module.exports = {
       ''
     ]
   },
+  store: {
+    minimal: {
+      _errors: [],
+      Dan: [
+        { duration: 30, distance: 17.3 }
+      ]
+    }
+  },
   tcomb: {
     invalidValue: /\[tcomb\] Invalid value/
   },
   types: {
     array: ['foo', 'bar', 'baz'],
-    string: 'foo'
+    object: { foo: 'foo', bar: 'bar', baz: 'baz' },
+    string: 'foo',
+    number: 2,
+    boolean: false
   }
 };
