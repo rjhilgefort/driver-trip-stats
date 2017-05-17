@@ -1,12 +1,7 @@
-const t = require('tcomb');
 const { tcomb, types } = require('../test-fixtures');
 const fpThrow = require('./fp-throw');
 
 describe('fpThrow', () => {
-  test('exports a function', () => {
-    t.Function(fpThrow);
-  });
-
   describe('throws an error', () => {
     const harness = (data) => {
       expect(() => fpThrow(data)).toThrow(data);

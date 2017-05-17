@@ -1,12 +1,7 @@
-const t = require('tcomb');
 const { program, file, types } = require('../test-fixtures');
 const extract = require('./index');
 
 describe('extract', () => {
-  test('exports a function', () => {
-    t.Function(extract);
-  });
-
   test('accepts a well formed `program` and nothing else', () => {
     const harness = data =>
       expect(extract(data)).rejects.toBeDefined();

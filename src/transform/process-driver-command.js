@@ -29,7 +29,7 @@ module.exports = curry(
         pipe(
           assoc(__, [], store)
         )
-      ),
+      )
     )(command);
   }
 );

@@ -1,8 +1,12 @@
-const { pipe, prop } = require('ramda');
+const { pipe, prop, when, is, curryN, __ } = require('ramda');
 const chalk = require('chalk');
 
 const generator = chalkColor =>
   pipe(
+    when(
+      is(Object),
+      curryN(3, JSON.stringify)(__, null, 6)
+    ),
     prop(chalkColor, chalk),
     // eslint-disable-next-line no-console
     console.log

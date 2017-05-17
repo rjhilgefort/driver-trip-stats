@@ -20,10 +20,35 @@ module.exports = {
   },
   store: {
     minimal: {
-      _errors: [],
       Dan: [
-        { duration: 30, distance: 17.3 }
+        {
+          duration: 60,
+          distance: 60,
+          speed: 60
+        }
       ]
+    },
+    example: {
+      Dan: [
+        {
+          duration: 20,
+          distance: 22,
+          speed: 66
+        },
+        {
+          duration: 30,
+          distance: 17,
+          speed: 34
+        }
+      ],
+      Alex: [
+        {
+          duration: 75,
+          distance: 42,
+          speed: 34
+        }
+      ],
+      Bob: []
     }
   },
   tcomb: {

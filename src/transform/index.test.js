@@ -1,13 +1,9 @@
 const { pipe } = require('ramda');
-const t = require('tcomb');
+const { Store } = require('../types');
 const { file, tcomb, types } = require('../test-fixtures');
 const transform = require('./index');
 
 describe('transform', () => {
-  test('exports a function', () => {
-    t.Function(transform);
-  });
-
   test('accepts an array', () => {
     expect(transform([])).toBeTruthy();
   });
@@ -22,11 +18,11 @@ describe('transform', () => {
     harness(types.boolean);
   });
 
-  test('returns an object', () => {
+  test('returns a `Store`', () => {
     expect(
       pipe(
         transform,
-        t.Object
+        Store
       )(file.example)
     ).toBeDefined();
   });

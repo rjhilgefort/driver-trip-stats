@@ -1,5 +1,4 @@
 const { always, pipe } = require('ramda');
-const t = require('tcomb');
 const fixtures = require('../test-fixtures');
 const processDriverCommand = require('./process-driver-command');
 
@@ -8,10 +7,6 @@ describe('processDriverCommand', () => {
 
   beforeEach(() => {
     store = fixtures.store.minimal;
-  });
-
-  test('exports a function', () => {
-    t.Function(processDriverCommand);
   });
 
   test('doesn\'t register drivers multiple times, preserves existing', () => {
