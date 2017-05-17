@@ -1,12 +1,6 @@
-# Root
+# Driver Trip Stats
 
-Sample program based on [these requirements](https://gist.github.com/dan-manges/1e1854d0704cb9132b74). The data file most follow the format described in the aforementioned requirements- see for more details.
-
-## Review TL;DR
-
-Hello, thanks for taking the time to review this submission. I had fun writing this and would love to have a chat to get some feedback- good or bad. I know this style of coding can be a bit confusing if you're not familiar and on that note, I'd like to mention that most of my background is in object oriented programming. I have been diving deeper and deeper into functional programming over the past year and have really enjoyed it. If you would have preferred object oriented... sorry and just trust that I proficient there as well.
-
-Jump down to the "Tests" section if you'd like to run this yourself. Or, you can check out the "output" folder for some screen grabs of the output.
+A CLI program that takes a data file and computes distance and speed. TODO: Write more.
 
 
 ## Installation / Environemnt
