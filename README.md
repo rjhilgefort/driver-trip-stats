@@ -2,6 +2,7 @@
 
 A CLI program that takes a data file and computes distance and speed. TODO: Write more.
 
+![](output/skip-outlier-trips.png)
 
 ## Installation / Environemnt
 
@@ -65,15 +66,15 @@ The structure is fairly basic and intended for a small application. If it were t
   /module 2
   /module 3
   /etc...
-  index.js        // Entry point of the application 
+  index.js        // Entry point of the application
 ```
 
 ## Tests
 
 - Jest as the testing framework with tests colocated.
-- I'm not doing any integration testing and I did not shoot for full coverage. I only tested the building block methods when they were sufficiently involved. In other words, utilities that simply partially applied something else in a small way do not have tests. 
-- Furthermore, I'm relying on the libraries I'm using to have tests and those tests to be passing- I did not write tests that verify their functionality. 
-- I focused on unit testing since most all the functions are pure and meant to be composed. 
+- I'm not doing any integration testing and I did not shoot for full coverage. I only tested the building block methods when they were sufficiently involved. In other words, utilities that simply partially applied something else in a small way do not have tests.
+- Furthermore, I'm relying on the libraries I'm using to have tests and those tests to be passing- I did not write tests that verify their functionality.
+- I focused on unit testing since most all the functions are pure and meant to be composed.
 - I would have loved to have written more tests, but I ran out of the time I had set aside to complete this. Please forgive the lack of tests in the `load` module. They aren't absent because I didn't think that didn't need tests.
 - I didn't strive to handle each and every edge case due to time limitations. If this were a production grade application, I would handle many more edge cases than are handled currently.
 
@@ -99,4 +100,3 @@ I wouldn't normally include a section like this in a README, but I wanted to giv
 - **tcomb**: Because I wasn't leveraging Sanctuary and Monads to handle my typechecking, I opted to go with a runtime typechecking library in tcomb. In a larger, longer running project, I would likely use a static type checker like Flow or TypeScript. I believe in using a typechecker of somekind no matter what the size of your application. They're easy enough to setup and save you time and bugs in the long run.
 - **mz**: Because ... promises.
 - **moment** No need to reinvent the wheel. Moment does a great job of comparing times.
-
